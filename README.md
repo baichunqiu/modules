@@ -16,7 +16,9 @@ ext {
 例如：'../../modules'表示当前项目根目录的上级目录，即和当前项目根文件夹同级目录下的modules目录
 
 include ':photoview', ':oklib', ':refresh', ':kit', ':adapter', ':icon'//single module
+
 project(':icon').projectDir = new File(settingsDir, '../modules/icon')
+
 project(':photoview').projectDir = new File('../modules/photoview')
 project(':adapter').projectDir = new File('../modules/adapter')
 project(':kit').projectDir = new File('../modules/kit')
