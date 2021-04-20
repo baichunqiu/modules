@@ -15,15 +15,29 @@ ext {
 例如：'../modules'表示当前项目根目录的上级目录，即和当前项目根文件夹同级目录下的modules目录 
 例如：'../../modules'表示当前项目根目录的上级目录，即和当前项目根文件夹同级目录下的modules目录
 
-include ':photoview', ':oklib', ':refresh', ':kit', ':adapter', ':icon'//single module
+include ':icon'
+project(':icon').projectDir =
+        new File(settingsDir, '../modules/icon')
 
-project(':icon').projectDir = new File(settingsDir, '../modules/icon')
+include ':photoview'
+project(':photoview').projectDir =
+        new File('../modules/photoview')
 
-project(':photoview').projectDir = new File('../modules/photoview')
-project(':adapter').projectDir = new File('../modules/adapter')
-project(':kit').projectDir = new File('../modules/kit')
-project(':refresh').projectDir = new File('../modules/refresh')
-project(':oklib').projectDir = new File('../modules/oklib')
+include ':adapter'
+project(':adapter').projectDir =
+        new File('../modules/adapter')
+
+include ':kit'
+project(':kit').projectDir =
+        new File('../modules/kit')
+
+include ':refresh'
+project(':refresh').projectDir =
+        new File('../modules/refresh')
+
+include ':oklib'
+project(':oklib').projectDir =
+        new File('../modules/oklib')
 
 ### 第三步：依赖modules
 implementation project(path: ':oklib')
