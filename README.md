@@ -5,7 +5,7 @@
 - adapter：listview和RecyclerView的适配器和viewHolder的抽象封装
 - kit：常用工具类的
 - refresh：RefreshView和XRecyclerView的封装，包含26中指示器
--  oklib：OKHttp的封装库，处理网络请求
+- oklib：OKHttp的封装库，处理网络请求
 
 # 接入指南
 ### 第一步：Project的build.gradle文件统一配置module的配置信息
@@ -19,8 +19,8 @@
 	}
 
 ### 第二步：settings.gradle导入module 并指导路径,指定路径时：'..'标识上级目录
-例如：'../modules'表示当前项目根目录的上级目录，即和当前项目根文件夹同级目录下的modules目录 
-例如：'../../modules'表示当前项目根目录的上级目录，即和当前项目根文件夹同级目录下的modules目录
+- 示例1：'../modules'表示当前项目根目录的上级目录，即和当前项目根文件夹同级目录下的modules目录 
+- 示例2：'../../modules'表示当前项目根目录的上级目录，即和当前项目根文件夹同级目录下的modules目录
 
 	include ':icon'
 	project(':icon').projectDir =
