@@ -1,6 +1,6 @@
 # modules
 各个独立module集合
-photoview：photoview的库
+    - photoview：photoview的库
 icon：常用svg的icon搜集库
 adapter：listview和RecyclerView的适配器和viewHolder的抽象封装
 kit：常用工具类的
