@@ -11,7 +11,10 @@ ext {
     versionName = "1.0.0"
 }
 
-### 第二步：settings.gradle导入module 并指导路径,指定路径时：'..'标识上级目录，例如：'../modules'表示当前项目根目录的上级目录，即和当前项目根文件夹同级目录下的modules目录 例如：'../../modules'表示当前项目根目录的上级目录，即和当前项目根文件夹同级目录下的modules目录
+### 第二步：settings.gradle导入module 并指导路径,指定路径时：'..'标识上级目录
+例如：'../modules'表示当前项目根目录的上级目录，即和当前项目根文件夹同级目录下的modules目录 
+例如：'../../modules'表示当前项目根目录的上级目录，即和当前项目根文件夹同级目录下的modules目录
+
 include ':photoview', ':oklib', ':refresh', ':kit', ':adapter', ':icon'//single module
 project(':icon').projectDir = new File(settingsDir, '../modules/icon')
 project(':photoview').projectDir = new File('../modules/photoview')
