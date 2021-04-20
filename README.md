@@ -1,6 +1,13 @@
 # modules
 各个独立module集合
-## 接入步骤
+photoview：photoview的库
+icon：常用svg的icon搜集库
+adapter：listview和RecyclerView的适配器和viewHolder的抽象封装
+kit：常用工具类的
+refresh：RefreshView和XRecyclerView的封装，包含26中指示器
+oklib：OKHttp的封装库，处理网络请求
+
+# 接入指南
 ### 第一步：Project的build.gradle文件统一配置module的配置信息
 ext {
     buildToolsVersion = "30.0.2"
