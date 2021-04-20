@@ -1,0 +1,10 @@
+<resources>
+    <string name="re_pull_down_refresh">下拉刷新</string>
+    <string name="re_last_update">上次更新:</string>
+    <string name="re_loading">加载中...</string>
+    <string name="re_refreshing">正在刷新...</string>
+    <string name="re_refresh_done">刷新完成</string>
+    <string name="re_load_done">加载完成</string>
+    <string name="re_nomore">没有了</string>
+    <string name="re_losen_to_refresh">松开立即刷新</string>
+</resources>
